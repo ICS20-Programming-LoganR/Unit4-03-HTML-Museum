@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="Museum in JS">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Logan Rodriguez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+<link rel="manifest" href="fav/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <!-- title -->
+    <title>Museum in JS</title>
+        <!-- style -->
+         <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-orange.min.css" />
+  </head>
+  <body>
+    <h1>Museum Entrance in JS</h1>
+    <p>Most of the time, museums will allow people to enter for free or with a discount based on a number of factors. These would include age and the day of the week.</p>
+    <p>This webpage will allow you to easily determine whether or not you can get into a museum for free or with a discount. Simply enter your age and select the day of the week.</p>
+ <!-- Script -->
+<script src="./js/script.js"></script>
+  <!-- textfield -->
+          <form action="javascript: answer()">
+        <label for="age">Your age</label>
+        <input type="number" step="1" min="0" id="age" placeholder="Age"><br><br>
+  <!-- drop-down menu -->
+            <label for="day">Day of the week:</label>
+
+<select name="day" id="day">
+  <option value="monday">Monday</option>
+  <option value="tuesday">Tuesday</option>
+  <option value="wednesday">Wednesday</option>
+  <option value="thursday">Thursday</option>
+  <option value="friday">Friday</option>
+  <option value="saturday">Saturday</option>
+  <option value="sunday">Sunday</option>
+</select>
+<!-- Accent-colored raised button with ripple -->
+<input type="submit" button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+			<div id="answer">
+			</div>
+  </body>
+</html>
